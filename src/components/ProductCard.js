@@ -19,10 +19,10 @@ export default function ProductCard({ name, image, price, src }) {
       />
 
       <CardContent className={classes.cardContent}>
-        <Typography variant="h6" color="textSecondary" >
+        <Typography >
           {name}
         </Typography>
-        <Typography variant="h6" color="textSecondary" >
+        <Typography >
           {price}
         </Typography>
       </CardContent>

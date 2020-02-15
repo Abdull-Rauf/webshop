@@ -22,8 +22,8 @@ const Nav = ({ title, bg_color, topNavLink1, TopNavLink2, }) => {
       </Toolbar>
       <Toolbar className={classes.toolbar}>
         <MenuItem className={classes.title}>
-          <Typography variant="h5" >{title}
-          </Typography></MenuItem>
+          <Typography className={classes.titleText}> {title} </Typography>
+        </MenuItem>
       </Toolbar>
 
       <Toolbar className={classes.toolbar} style={{ alignItems: 'right' }}>
