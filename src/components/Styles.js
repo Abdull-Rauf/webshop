@@ -20,11 +20,14 @@ const useStyles = makeStyles(() => ({
 
   title: {
     alignSelf: 'center',
-    flexGrow: 2
+    flexGrow: 2,
   },
-
+  titleText: {
+    fontSize: '1.4em',
+    fontStyle: 'bold'
+  },
   profileIcon: {
-    fontSize: '30',
+    fontSize: 32,
   },
   icon: {
     height: '100%',
@@ -39,16 +42,21 @@ const useStyles = makeStyles(() => ({
   },
   products: {
     display: 'flex',
-    width: '100%',
-    margin: 'auto'
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    alignContent: 'space-arond',
+    alignItems: 'center',
+    width: '90%',
+    margin: 'auto',
+    marginTop: '10%',
   },
   productCard: {
-    marginTop: '10vh',
-    marginLeft: '2vw',
-    width: '25vw',
-    minHeight: '60vh'
+    margin: '10px',
+    width: '20vw',
+    minHeight: '50vh'
   },
   cardContent: {
+    marginTop: 50,
     display: 'flex',
     justifyContent: 'space-between'
   },
@@ -57,6 +65,12 @@ const useStyles = makeStyles(() => ({
     minWidth: '100%',
     backgroundColor: '#CCC'
   },
+  footer: {
+    marginTop: '10%',
+    minWidth: '100%',
+    backgroundColor: '#CCC'
+  },
+
 
 
 }));

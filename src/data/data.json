@@ -1,0 +1,224 @@
+  {
+    "shoes": [
+      {
+        "id": "1",
+        "name": "Nike React Infinity ",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/9b2e37e8-78f3-42bb-b31d-b0cf629c9627/loparsko-react-infinity-run-flyknit-1Dlbt9.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Nike ZoomX Vaporfly",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/e38495e5-e96b-4530-9bba-fa51dbf6b9b4/loparsko-zoomx-vaporfly-next-jvRGHN.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Nike Zoom",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/f5fec5ad-7e20-4d6f-a224-6d24dd4c67fe/loparsko-zoom-pegasus-turbo-2-xCVMXs.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Nike Renew",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/55d64ae6-806b-48f5-9f4c-46265717889a/loparsko-renew-run-SPjMg8.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Nike Air Zoom",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/ijvfwori4n0f0kjnkexe/loparsko-air-zoom-pegasus-36-shield-rsCcK6.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Nike Zoom Fly",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/eiajoncuscblzqegfcno/loparsko-zoom-fly-3-rg0S5K.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Nike Joyride",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/de1ef7f2-e4e4-40c2-8e6c-e96520e167b1/loparsko-joyride-dual-run-4zMFlv.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Nike Free RN",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "1399,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/a0bmqmy8waozigswxtmt/custom-nike-free-rn-5.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Nike Zoom Pegasus",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "1599,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/6b94e7f2-f33a-4b8b-ae57-498c9d708411/custom-nike-air-zoom-pegasus-36-shield-by-you.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Nike Zoom Turbo",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "999,00",
+        "base_price": "1949,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/285e3b36-6aa2-46d3-b183-d6df939c55f0/loparsko-zoom-pegasus-turbo-2-Mz97g0.jpg"
+      },
+      {
+        "id": "11",
+        "name": "Nike Pegasus Trail",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "1899,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/kwwnsm2dmsvpnumykfrf/terrangloparsko-pegasus-trail-lQxgbF.jpg"
+      },
+      {
+        "id": "12",
+        "name": "Nike Downshifter 9",
+        "brand": "Nike",
+        "category": "shoes",
+        "price": "699,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/vrgnhpdrlyt5sehxtkxg/loparsko-downshifter-9-25f2pM.jpg"
+      }
+    ],
+    "clothes": [
+      {
+        "id": "13",
+        "name": "Jordan x Paris",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/135764bd-a29a-4008-a671-9cdbb26979a7/fotbollstraningstroja-jordan-paris-saint-germain-strike-2lPwtk.jpg"
+      },
+      {
+        "id": "14",
+        "name": "Nike ACG",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "1499,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2b319bb7-c30a-4c5e-824b-8a5cffea5a5f/fleecejacka-acg-K6nNBc.jpg"
+      },
+      {
+        "id": "15",
+        "name": "Nike Dri-FIT",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "579,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ad9383b3-3246-40a6-bcce-0ff349af9a6a/fotbollstraningstroja-dri-fit-strike-WspBp7.jpg"
+      },
+      {
+        "id": "16",
+        "name": "",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": ""
+      },
+      {
+        "id": "17",
+        "name": "Club Fleece",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "579,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/yl11aomkqfavi4datppg/huvtroja-med-hel-dragkedja-sportswear-club-fleece-jJJvTW.jpg"
+      },
+      {
+        "id": "18",
+        "name": "Nike AeroLayer",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/eoieiyfwjufdhcovcslb/loparjacka-aerolayer-Z02VhD.jpg"
+      },
+      {
+        "id": "19",
+        "name": "",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": ""
+      },
+      {
+        "id": "1",
+        "name": "Nike Dri-FIT FC",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/igyrvftpnt29xhjmrrtm/fotbollstroja-dri-fit-fc-barcelona-strike-pqCcDg.jpg"
+      },
+      {
+        "id": "20",
+        "name": "Nike VaporKnit",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "1299,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/owzscilt6oaodngys1bk/traningstroja-vaporknit-chelsea-fc-strike-mcw77N.jpg"
+      },
+      {
+        "id": "21",
+        "name": "A.S. Roma Strike",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/bvtppse7owvplsykaaxz/fotbollstraningstroja-as-roma-strike-SrhZqX.jpg"
+      },
+      {
+        "id": "22",
+        "name": "Team 31 Courtside",
+        "brand": "Nike",
+        "category": "clothes",
+        "sub_category": "traing_sweat_shirt",
+        "price": "679,00",
+        "base_price": "999,00",
+        "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/qafneoppgxvdsvqm3dwb/nba-jacka-team-31-courtside-n6xVZT.jpg"
+      }
+    ]
+  }
