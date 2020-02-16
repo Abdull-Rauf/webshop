@@ -1,8 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './App.css';
 import Nav from './components/Navbar';
 import Footer from './components/Footer'
-import ProductsScreen from './screens/ProductsScreen'
+import Product from './containers/product/product'
+import HomeScreen from './screens/HomeScreen'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ProductDetailsScreen from './screens/ProductDetailsScreen';
 
 
 
@@ -10,15 +13,23 @@ import ProductsScreen from './screens/ProductsScreen'
 function App() {
 
   return (
-
-    <Fragment>
-      <Nav title='ShopOnline' topNavLink1='CLOTHES' TopNavLink2='SHOES' bg_color='transparent' />
+    <Router>
+      <Nav title='ShopOnline' navLink1='CLOTHES' navLink2='SHOES' bgColor='transparent' />
       <div className="App">
-        <ProductsScreen />
+        <Switch>
+          <Route path='/productdetails'>
+            <ProductDetailsScreen />
+          </Route>
+          <Route path='/products'>
+            <Product />
+          </Route>
+          <Route path='/'>
+            <HomeScreen />
+          </Route>
+        </Switch>
       </div>
-      <Footer title='ShopOnline' topNavLink1='CLOTHES' TopNavLink2='SHOES' bg_color='#000000' />
-    </Fragment>
+      <Footer title='ShopOnline' />
+    </Router>
   );
 }
-
 export default App;

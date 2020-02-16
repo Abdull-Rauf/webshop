@@ -1,18 +1,8 @@
 import { createStore } from 'redux'
-
-const testReducer = (state = {}, action) => {
-
-  return {
-    ...state,
-    testValue: 'Hello World',
-  }
-
-}
+import rootReducer from './reducers'
 
 const store = createStore(
-  testReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
 export default store;
-
-//window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

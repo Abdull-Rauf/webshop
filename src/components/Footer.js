@@ -30,7 +30,7 @@ const Footer = ({ title, bg_color, topNavLink1, TopNavLink2, }) => {
 
       <Divider />
 
-      <AppBar position="static">
+      <AppBar position="static" className={classes.footerBottom}>
         <Toolbar variant="dense">
           <Typography
             variant="caption"
