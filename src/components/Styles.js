@@ -6,18 +6,23 @@ const useStyles = makeStyles(() => ({
   //Navbar
   navbar: {
     display: 'flex',
-    height: '10vh',
+    height: '8vh',
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    borderBottom: '1px solid #CFCFCF'
+    borderBottom: '1px solid #CFCFCF',
+
   },
-  toolbar: {
+  toolbarNavLinks: {
     display: 'flex',
     textAlign: 'center',
     flexDirection: 'row',
+    marginLeft: '10%'
+  },
+  toolbarRight: {
+    display: 'flex',
+    textAlign: 'center',
+    marginLeft: '1%'
   },
   title: {
-    alignSelf: 'center',
     flexGrow: 2,
   },
   titleText: {
@@ -25,23 +30,37 @@ const useStyles = makeStyles(() => ({
     fontStyle: 'bold',
     fontWeight: 800
   },
-  profileIcon: {
-    fontSize: 32,
-  },
+
   link: {
     textDecoration: 'none',
-    color: '#000000'
+    color: '#000000',
+    fontStyle: 'bold',
+    fontSize: '1em',
+
+  },
+  search: {
+    display: 'flex',
+    marginLeft: '38%',
+    width: 600
+
   },
   icon: {
     height: '100%',
   },
 
-  bagIcon: {
-    fontSize: '25',
-  },
   badge: {
     right: -3,
     padding: '0 4px',
+  },
+  topNewsBar: {
+    display: 'flex',
+    height: '5vh',
+    backgroundColor: 'red',
+    textAlign: 'center',
+    justifyContent: 'center',
+    color: '#f5f5f5',
+    marginTop: '8vh',
+    zIndex: '99'
   },
   //Home Page
   offersCard: {
@@ -52,7 +71,6 @@ const useStyles = makeStyles(() => ({
   offersImage: {
     minHeight: 500,
     minWidth: '100%',
-    backgroundColor: '#CCC',
     objectFit: 'cover'
   },
   //Popular Card
@@ -74,7 +92,6 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     width: '90%',
     margin: 'auto',
-    marginTop: '2%',
   },
   productCard: {
     margin: '10px',
@@ -89,7 +106,6 @@ const useStyles = makeStyles(() => ({
   cardMedia: {
     minHeight: 350,
     minWidth: '100%',
-    backgroundColor: '#CCC'
   },
   //Product Details
   productDetails: {

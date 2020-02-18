@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom'
-import { Card, CardMedia, CardContent, Typography } from '@material-ui/core'
+import { CircularProgress, Card, CardMedia, CardContent, Typography } from '@material-ui/core'
+
 import useStyles from './Styles'
 
 
-export default function ProductCard({ name, image, price, src }) {
+export default function ProductCard({ name, price, src }) {
 
 
   const classes = useStyles();
@@ -13,21 +14,24 @@ export default function ProductCard({ name, image, price, src }) {
     <Link to='/productdetails'>
       <Card className={classes.productCard}>
 
-        <CardMedia
-          className={classes.cardMedia}
-          image={src}
-          title={name}
-        />
+        {!src ? <CircularProgress /> :
+          <Fragment>
+            <CardMedia
+              className={classes.cardMedia}
+              image={src}
+              title={name}
+            />
 
-        <CardContent className={classes.cardContent}>
-          <Typography >
-            {name}
-          </Typography>
-          <Typography >
-            {price}
-          </Typography>
-        </CardContent>
+            <CardContent className={classes.cardContent}>
 
+              <Typography >
+                {name}
+              </Typography>
+              <Typography >
+                {price}
+              </Typography>
+            </CardContent>
+          </Fragment>}
       </Card>
     </Link>
 
