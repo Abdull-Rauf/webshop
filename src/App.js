@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Navbar';
+import Nav from './components/Navbar'
+import NewsBar from './components/NewsBar'
 import Footer from './components/Footer'
 import Product from './containers/product/product'
 import HomeScreen from './screens/HomeScreen'
@@ -14,7 +15,10 @@ function App() {
 
   return (
     <Router>
-      <Nav title='ShopOnline' navLink1='CLOTHES' navLink2='SHOES' bgColor='transparent' />
+      <header>
+        <Nav title='ShopOnline' navLink1='CLOTHES' navLink2='SHOES' bgColor='white' />
+        <NewsBar />
+      </header>
       <div className="App">
         <Switch>
           <Route path='/productdetails'>
