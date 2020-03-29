@@ -1,10 +1,14 @@
 import React, { Fragment } from 'react';
 import { Card, CardMedia, Typography, Button } from '@material-ui/core'
 import useStyles from './Styles'
+import { sizing } from '@material-ui/system';
+
+export default function ProductDetailsComponent(props) {
+
+  console.log(props)
 
 
-export default function ProductDetailsComponent({ name, price, src }) {
-
+  const product = props.productDetails
 
   const classes = useStyles();
 
@@ -13,17 +17,25 @@ export default function ProductDetailsComponent({ name, price, src }) {
       <Card className={classes.detailsImageCard} elevation={0}>
 
         <CardMedia
+          height="50%"
           className={classes.detailImage}
-          image={src}
+          image={product.src}
         />
 
       </Card>
       <Card className={classes.detailsText} elevation={0}>
-        <Typography >Brand Name</Typography>
-        <Typography variant='h5'>Product Name</Typography>
-        <Typography variant='h4' className={classes.detailsPrice}>999:-</Typography>
-        <Button style={{ marginTop: '310px', width: '300px', height: '50px' }} variant="contained" color="secondary">
-          <Typography variant='h6'>ADD TO BAG</Typography>
+        <Typography >{product.brand}</Typography>
+        <br />
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <Typography variant='h6'>{product.name}</Typography>
+          <br />
+          <Typography variant='h2' className={classes.detailsPrice}>{product.price}</Typography>
+        </div>
+
+        <Button onClick={() => props.addToBag(props.productDetails)}
+          style={{ marginTop: '40px', width: '300px', height: '50px', textSelf: 'center' }}
+          variant="contained" color="secondary">
+          <Typography variant='h6' elevation={0}>ADD TO BAG</Typography>
         </Button>
       </Card>
 

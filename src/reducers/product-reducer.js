@@ -1,8 +1,9 @@
-import { EventConstants } from '../../constants/event-constants'
+import { EventConstants } from '../constants/event-constants'
 
 
 const initialState = {
-  category: ''
+  category: '',
+  selectedProduct: {}
 }
 
 const productReducer = (state = initialState, { type, payload }) => {
@@ -12,7 +13,12 @@ const productReducer = (state = initialState, { type, payload }) => {
       return {
         ...state, category: payload,
       }
+    case EventConstants.SELECT_PRODUCT:
+      return {
 
+        ...state, selectedProduct: payload
+
+      }
 
     default:
       return state

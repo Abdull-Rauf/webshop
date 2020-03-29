@@ -11,37 +11,25 @@ const Footer = ({ title, bg_color, topNavLink1, TopNavLink2, }) => {
 
   return (
     <Paper className={classes.footer}>
-      <Grid container spacing={5} justify="space-around" alignItems="center">
+      <Grid container spacing={6} style={{ width: '80vw', margin: 'auto' }}>
         <Grid item xs>
+          <Typography variant="h5" color="inherit">
+            ShopOnline
+           </Typography>
 
         </Grid>
 
         <Grid item xs>
-          <Typography variant="subheading" color="inherit">
-            Footer Content
+          <Typography variant="h6" color="inherit">
+            About
            </Typography>
         </Grid>
         <Grid item xs>
-          <Typography variant="subheading" color="inherit">
-            Footer Content
+          <Typography variant="h6" color="inherit">
+            Customer Service
            </Typography>
         </Grid>
       </Grid>
-
-      <Divider />
-
-      <AppBar position="static" className={classes.footerBottom}>
-        <Toolbar variant="dense">
-          <Typography
-            variant="caption"
-            color="inherit"
-            className={classes.flex}
-          >
-            © Copyright ShopOnline
-            </Typography>
-
-        </Toolbar>
-      </AppBar>
 
     </Paper>
 
