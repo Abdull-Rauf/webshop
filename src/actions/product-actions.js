@@ -9,3 +9,12 @@ export function categorySelector(payload) {
   }
 
 }
+
+export function selectProduct(payload) {
+
+  return {
+    type: EventConstants.SELECT_PRODUCT,
+    payload
+  }
+
+}

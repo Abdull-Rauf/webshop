@@ -3,10 +3,11 @@ import './App.css';
 import Nav from './components/Navbar'
 import NewsBar from './components/NewsBar'
 import Footer from './components/Footer'
-import Product from './containers/product/product'
+import ProductCategory from './containers/product'
+import ProductDetails from './containers/details'
+import ShoppingBag from './containers/shoppingBagContainer'
 import HomeScreen from './screens/HomeScreen'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ProductDetailsScreen from './screens/ProductDetailsScreen';
 
 
 
@@ -21,11 +22,14 @@ function App() {
       </header>
       <div className="App">
         <Switch>
-          <Route path='/productdetails'>
-            <ProductDetailsScreen />
+          <Route path='/shoppingbag'>
+            <ShoppingBag />
+          </Route>
+          <Route path='/item'>
+            <ProductDetails />
           </Route>
           <Route path='/products'>
-            <Product />
+            <ProductCategory />
           </Route>
           <Route path='/'>
             <HomeScreen />

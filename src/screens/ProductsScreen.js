@@ -6,19 +6,25 @@ import { Typography } from '@material-ui/core';
 
 export default function ProductsScreen(props) {
 
-  const { products } = props;
-  const [category, setCategory] = useState(products)
-  useEffect(() => setCategory(products), [products])
-  const classes = useStyles();
 
+  const { productCategory } = props;
+  const [category, setCategory] = useState(productCategory)
+  useEffect(() => setCategory(productCategory), [productCategory])
+  const classes = useStyles();
+  const products = category ? data[category] : data;
   return (
     <Fragment>
       <Typography variant='h4' style={{ marginTop: '5vh', marginBottom: '5vh' }}>{category.toUpperCase()}</Typography>
       <div className={classes.products}>
-        {category < 1 ? <h1>No Category selected </h1> : data[category].map(product => {
-          return <ProductCard name={product.name} price={product.price} src={product.imgSrc} />
+        {products.map(product => {
+          return <ProductCard
+            id={product.id}
+            brand={product.brand}
+            name={product.name}
+            price={product.price}
+            src={product.imgSrc}
+            selectProduct={props.selectProduct} />
         })}
       </div>
-    </Fragment>
-  )
+    </Fragment>)
 }

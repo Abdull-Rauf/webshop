@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard'
 import data from '../data/data.json'
 import { Typography, } from '@material-ui/core'
 
-export default function HomeScreen() {
+export default function HomeScreen(props) {
 
   const classes = useStyles();
 
@@ -13,7 +13,7 @@ export default function HomeScreen() {
 
 
     <div className={classes.home}>
-      <Typography variant='h4' style={{ marginTop: '5vh', marginBottom: '5vh' }}> Best Price</Typography>
+      <Typography variant='h4' style={{ marginTop: '1vh', marginBottom: '5vh' }}> </Typography>
 
 
       {data.offers.map(product => {
@@ -25,7 +25,12 @@ export default function HomeScreen() {
       <div className={classes.popular}>
         {data.popular.map(product => {
 
-          return <ProductCard name={product.name} price={product.price} src={product.imgSrc} />
+          return <ProductCard
+            brand={product.brand}
+            name={product.name}
+            price={product.price}
+            src={product.imgSrc}
+            selectProduct={props.selectProduct} />
 
         })}
       </div>

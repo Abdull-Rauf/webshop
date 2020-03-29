@@ -6,22 +6,28 @@ const useStyles = makeStyles(() => ({
   //Navbar
   navbar: {
     display: 'flex',
+    paddingLeft: '10%',
+    paddingRight: '10%',
     height: '8vh',
     flexDirection: 'row',
     borderBottom: '1px solid #CFCFCF',
+    justifyContent: 'space-between'
 
   },
   toolbarNavLinks: {
     display: 'flex',
-    textAlign: 'center',
+    textAlign: 'left',
     flexDirection: 'row',
-    marginLeft: '10%'
+    marginLeft: '10%',
+    width: '30%'
+
   },
-  toolbarRight: {
-    display: 'flex',
-    textAlign: 'center',
-    marginLeft: '1%'
+  munuitem: {
+    "&:hover": {
+      backgroundColor: 'white'
+    },
   },
+
   title: {
     flexGrow: 2,
   },
@@ -34,38 +40,37 @@ const useStyles = makeStyles(() => ({
   link: {
     textDecoration: 'none',
     color: '#000000',
-    fontStyle: 'bold',
-    fontSize: '1em',
 
   },
-  search: {
-    display: 'flex',
-    marginLeft: '38%',
-    width: 600
 
+  toolbarRight: {
+    width: '40%',
+    height: '100%',
+    marginLeft: '30%'
   },
   icon: {
     height: '100%',
+    margin: 'auto'
   },
 
   badge: {
-    right: -3,
+    right: -2,
     padding: '0 4px',
   },
   topNewsBar: {
     display: 'flex',
     height: '5vh',
-    backgroundColor: 'red',
+    backgroundColor: '#ffca28',
     textAlign: 'center',
     justifyContent: 'center',
-    color: '#f5f5f5',
+    color: '#333',
     marginTop: '8vh',
     zIndex: '99'
   },
   //Home Page
   offersCard: {
     marginLeft: '5vw',
-    width: '90vw',
+    width: '80vw',
     minHeight: 500
   },
   offersImage: {
@@ -80,7 +85,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'space-evenly',
     alignContent: 'space-arond',
     alignItems: 'center',
-    width: '90vw',
+    width: '80vw',
     margin: 'auto',
   },
   //Products Page
@@ -94,37 +99,49 @@ const useStyles = makeStyles(() => ({
     margin: 'auto',
   },
   productCard: {
-    margin: '10px',
-    width: '20vw',
-    minHeight: '50vh'
+    marginTop: '10px',
+    marginBottom: '10px',
+    marginLeft: '3px',
+    marginRight: '3px',
+    width: '21vw',
+    minHeight: '15%',
+    "&:hover": {
+      boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'
+    },
   },
   cardContent: {
-    marginTop: 50,
+    marginTop: 5,
     display: 'flex',
     justifyContent: 'space-between'
   },
   cardMedia: {
-    minHeight: 350,
-    minWidth: '100%',
+    minHeight: 420,
+    width: '100%',
+    objectFit: 'contain',
+    padding: 5
+  },
+  cardDetail: {
+    textDecoration: 'none',
   },
   //Product Details
   productDetails: {
     marginLeft: '10vw',
     width: '80vw',
-    marginTop: '15vh',
+    marginTop: '10vh',
     display: 'flex',
     justifyContent: 'center',
-    minHeight: 450,
   },
   detailsImageCard: {
     width: '60%',
     display: 'flex',
-    minHeight: 450,
+    padding: '10px',
+    minHeight: '40%'
   },
   detailImage: {
-    minHeight: 450,
     minWidth: '100%',
-    backgroundColor: '#CCC'
+    backgroundColor: '#CCC',
+    padding: '10px',
+    minHeight: 550
   },
   detailsText: {
     textAlign: 'left',
@@ -136,12 +153,43 @@ const useStyles = makeStyles(() => ({
     color: 'red'
   },
 
+  //shoppingbagScreen
+  bagScreen: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '10vh',
+    display: 'flex',
+    minHeight: '47vh',
+    width: '80%',
+  },
+
+  bagProductCard: {
+    display: 'flex',
+    borderBottom: '1px solid #CCC',
+    height: 100,
+    width: '100%',
+    marginBottom: 5
+
+  },
+  bagProductImage: {
+    height: 90,
+    width: '10%'
+  },
+  bagSummary: {
+    width: '38%',
+    border: '1px solid #CCC',
+    height: '40vh',
+    marginLeft: '2%'
+  },
+
+
   //Footer
 
 
   footer: {
+    height: '20vh',
     margin: '10vh auto 0',
-    width: '95vw',
+    width: '100vw',
     backgroundColor: '#303030',
     color: 'white'
   },
@@ -149,4 +197,5 @@ const useStyles = makeStyles(() => ({
     backgroundColor: '#000000'
   },
 }));
+
 export default useStyles;

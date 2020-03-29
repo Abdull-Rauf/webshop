@@ -1,22 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-header{
+
+header {
   display: flex;
   flex-direction: column;
 
 }
+
 .App {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100vw;
   justify-content: center;
 }
