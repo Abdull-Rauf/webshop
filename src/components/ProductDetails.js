@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Card, CardMedia, Typography, Button } from '@material-ui/core'
 import useStyles from './Styles'
-import { sizing } from '@material-ui/system';
 
 export default function ProductDetailsComponent(props) {
 

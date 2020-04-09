@@ -5,13 +5,13 @@ import { CircularProgress, Card, CardMedia, CardContent, Typography } from '@mat
 import useStyles from './Styles'
 
 
-export default function ProductCard({ brand, name, price, src, id, selectProduct }) {
+export default function ProductCard({ brand, name, price, src, id }) {
 
 
   const classes = useStyles();
 
   return (
-    <Link to={{ pathname: `/item/${id}${name}` }} className={classes.cardDetail} onClick={() => selectProduct({ brand, name, price, src, id })} >
+    <Link to={{ pathname: `/item/${id}`, details: { brand, name, price, src, id } }} className={classes.cardDetail}  >
       <Card className={classes.productCard} elevation={0}>
 
         {!src ? <CircularProgress /> :
@@ -23,7 +23,9 @@ export default function ProductCard({ brand, name, price, src, id, selectProduct
             />
 
             <CardContent className={classes.cardContent}>
-
+              <Typography >
+                {brand}
+              </Typography>
               <Typography >
                 {name}
               </Typography>

@@ -1,17 +1,17 @@
 import React from 'react';
-import { AppBar, Typography, Toolbar } from '@material-ui/core'
+import { AppBar, Typography } from '@material-ui/core'
 import useStyles from './Styles'
 
 
 
-const NewsBar = ({ title, }) => {
+const NewsBar = () => {
 
   const classes = useStyles();
 
   return (
-    <div>
+    <div style={{ paddingBottom: 25 }}>
       <AppBar className={classes.topNewsBar} position='relative' elevation={0}>
-        <Typography>20% off till 28 February </Typography>
+        <Typography>20% off till 31 May </Typography>
       </AppBar>
     </div>
 
