@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Navbar'
-import NewsBar from './components/NewsBar'
-import Footer from './components/Footer'
+import Nav from './components/header/Navbar'
+import Footer from './components/footer/Footer'
+import ProductsScreen from './screens/ProductsScreen'
 import ProductCategory from './containers/product'
+import ProductDetailsScreen from './screens/ProductDetailsScreen'
 import ProductDetails from './containers/details'
 import ShoppingBag from './containers/shoppingBagContainer'
 import HomeScreen from './screens/HomeScreen'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import TopMenu from './components/header/TopMenu';
+import items from './components/header/menuitems.json'
 
 
 
@@ -16,24 +19,24 @@ function App() {
 
   return (
     <Router>
-      <header>
-        <Nav title='ShopOnline' navLink1='CLOTHES' navLink2='SHOES' bgColor='white' />
-        <NewsBar />
-      </header>
+      <>
+        <Nav title='FashionPoint' navLink1='CLOTHES' navLink2='SHOES' bgColor='white' />
+        <TopMenu />
+
+      </>
       <div className="App">
         <Switch>
-          <Route path='/shoppingbag'>
-            <ShoppingBag />
-          </Route>
-          <Route path='/item'>
-            <ProductDetails />
-          </Route>
-          <Route path='/products'>
-            <ProductCategory />
-          </Route>
-          <Route path='/'>
-            <HomeScreen />
-          </Route>
+          <Route exact path='/' component={HomeScreen} />
+          <Route exact path='/shoppingbag' component={ShoppingBag} />
+          <Route exact path='/item/:id' component={ProductDetails} />
+          <Route exact path='/products' component={ProductCategory} />
+          {items.map(({ label, name, subItems, ...rest }) => (
+
+            subItems.map((subItem) => (
+              <Route path={`/sv-En/${name}/${subItem.name}`} key={subItem.name}
+                render={(props) => <ProductsScreen {...props} name={name} sub={subItem.name} />} />
+            ))
+          ))}
         </Switch>
       </div>
       <Footer title='ShopOnline' />

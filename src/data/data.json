@@ -1,6 +1,5 @@
   {
-    "shoes": [
-      {
+    "shoes": [{
         "id": "1",
         "name": "Nike React Infinity ",
         "brand": "Nike",
@@ -109,19 +108,16 @@
         "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/vrgnhpdrlyt5sehxtkxg/loparsko-downshifter-9-25f2pM.jpg"
       }
     ],
-    "offers": [
-      {
-        "id": "12",
-        "name": "Nike Downshifter 9",
-        "brand": "Nike",
-        "category": "shoes",
-        "price": "699,00",
-        "base_price": "999",
-        "imgSrc": "https://thesolewomens.co.uk/wp-content/uploads/2018/05/BANNER-2.jpg"
-      }
-    ],
-    "popular": [
-      {
+    "offers": [{
+      "id": "12",
+      "name": "Nike Downshifter 9",
+      "brand": "Nike",
+      "category": "shoes",
+      "price": "699,00",
+      "base_price": "999",
+      "imgSrc": "https://thesolewomens.co.uk/wp-content/uploads/2018/05/BANNER-2.jpg"
+    }],
+    "popular": [{
         "id": "6",
         "name": "Nike Zoom Fly",
         "brand": "Nike",
@@ -158,8 +154,7 @@
         "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/285e3b36-6aa2-46d3-b183-d6df939c55f0/loparsko-zoom-pegasus-turbo-2-Mz97g0.jpg"
       }
     ],
-    "clothes": [
-      {
+    "clothes": [{
         "id": "13",
         "name": "Jordan x Paris",
         "brand": "Nike",
@@ -191,7 +186,7 @@
       },
       {
         "id": "16",
-        "name": "",
+        "name": "Rain Jacket",
         "brand": "Nike",
         "category": "clothes",
         "sub_category": "traing_sweat_shirt",

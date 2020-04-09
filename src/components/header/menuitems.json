@@ -1,0 +1,54 @@
+[{
+    "name": "men",
+    "label": "Men ",
+    "link": "/men",
+    "subItems": [{
+        "name": "clothes",
+        "label": "Clothes "
+      },
+      {
+        "name": "shoes",
+        "label": "Shoes"
+      }
+    ]
+  },
+  {
+    "name": "women",
+    "label": "Women ",
+    "subItems": [{
+        "name": "clothes",
+        "label": "Clothes "
+      },
+      {
+        "name": "shoes",
+        "label": "Shoes"
+      }
+    ]
+  },
+  {
+    "name": "kids",
+    "label": "Kids",
+    "subItems": [{
+        "name": "clothes",
+        "label": "Clothes "
+      },
+      {
+        "name": "shoes",
+        "label": "Shoes"
+      }
+    ]
+  },
+  {
+    "name": "sale",
+    "label": "SALE",
+    "subItems": [{
+        "name": "clothes",
+        "label": "Clothes "
+      },
+      {
+        "name": "shoes",
+        "label": "Shoes"
+      }
+    ]
+  }
+]

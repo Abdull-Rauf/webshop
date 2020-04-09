@@ -5,16 +5,10 @@ import ProductDetailsComponent from '../components/ProductDetails';
 
 export default function ProductDetailsScreen(props) {
 
-  const [details, setDetails] = useState([])
 
-  useEffect(() => {
+  console.log(props.location.details)
 
-
-
-  }, [])
-
-  console.log(props.location)
-  const productDetails = props.productDetails
+  const productDetails = props.location.details
   const classes = useStyles();
   return (
     <Fragment>
