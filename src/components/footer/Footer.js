@@ -1,11 +1,9 @@
 import React from 'react';
-import { Paper, Divider, Grid, AppBar, Typography, Toolbar, MenuItem, Badge } from '@material-ui/core'
+import { Paper, Grid, Typography, MenuItem, } from '@material-ui/core'
 import useStyles from '../Styles'
 
 
-
-
-const Footer = ({ title, bg_color, topNavLink1, TopNavLink2, }) => {
+const Footer = () => {
 
   const classes = useStyles();
 
@@ -13,21 +11,30 @@ const Footer = ({ title, bg_color, topNavLink1, TopNavLink2, }) => {
     <Paper className={classes.footer}>
       <Grid container spacing={6} style={{ width: '80vw', margin: 'auto' }}>
         <Grid item xs>
-          <Typography variant="h5" color="inherit">
+          <Typography variant="h5">
             FashionPoint
            </Typography>
 
         </Grid>
 
         <Grid item xs>
-          <Typography variant="h6" color="inherit">
+          <Typography variant="h6" >
             About
            </Typography>
+          <MenuItem>About us</MenuItem>
+          <MenuItem>Privacy Policy</MenuItem>
+          <MenuItem>Press</MenuItem>
+          <MenuItem>Cookies</MenuItem>
+
         </Grid>
         <Grid item xs>
-          <Typography variant="h6" color="inherit">
+          <Typography variant="h6">
             Customer Service
            </Typography>
+          <MenuItem>Contacts us</MenuItem>
+          <MenuItem>Payment</MenuItem>
+          <MenuItem>Shipment</MenuItem>
+          <MenuItem>FAQs</MenuItem>
         </Grid>
       </Grid>
 

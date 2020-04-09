@@ -100,7 +100,7 @@ const useStyles = makeStyles(() => ({
     marginTop: '10vh',
     display: 'flex',
     flexDirection: 'column',
-    width: '40%',
+    width: '50%',
     boxShadow: '0px 5px 5px #CCC',
 
   },
@@ -111,10 +111,8 @@ const useStyles = makeStyles(() => ({
     borderBottom: '1px solid #CCC',
     height: 100,
     width: '95%',
-    marginBottom: 5,
-    padding: 10
-
-
+    margin: 'auto',
+    marginBottom: 5
   },
   bagProductImage: {
     height: 80,
@@ -140,7 +138,7 @@ const useStyles = makeStyles(() => ({
 
 
   footer: {
-    height: '20vh',
+    minHeight: '20vh',
     margin: '10vh auto 0',
     width: '100vw',
     backgroundColor: '#303030',
