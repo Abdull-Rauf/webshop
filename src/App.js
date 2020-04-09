@@ -4,10 +4,9 @@ import Nav from './components/header/Navbar'
 import Footer from './components/footer/Footer'
 import ProductsScreen from './screens/ProductsScreen'
 import ProductCategory from './containers/product'
-import ProductDetailsScreen from './screens/ProductDetailsScreen'
 import ProductDetails from './containers/details'
 import ShoppingBag from './containers/shoppingBagContainer'
-import HomeScreen from './screens/HomeScreen'
+import HomeScreen from './screens/HomeScreen.jsx'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import TopMenu from './components/header/TopMenu';
 import items from './components/header/menuitems.json'
