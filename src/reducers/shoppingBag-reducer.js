@@ -8,16 +8,31 @@ const initState = {
 
 const shoppingBagReducer = (state = initState, { type, payload }) => {
 
-  switch (type) {
-    case EventConstants.ADD_TO_BAG:
-      return {
-        ...state, items: [...state.items, payload]
-      }
-    default:
-      return state
+  if (type === EventConstants.ADD_TO_BAG) {
+    if (state.items.length > 0) {
+      let product = state.items.find(item => item.id === payload.id)
 
+      if (!product) {
+        const newPayLoad = Object.assign({ total: 1 }, payload)
+
+        return {
+          ...state, items: [...state.items, newPayLoad]
+        }
+      }
+
+      product.total += 1
+      return {
+        ...state
+      }
+    } else {
+      const newPayLoad = Object.assign({ total: 1 }, payload)
+      return {
+        ...state, items: [...state.items, newPayLoad]
+      }
+    }
   }
 
+  return state
 }
 
 export default shoppingBagReducer;

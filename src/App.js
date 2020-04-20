@@ -11,11 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import TopMenu from './components/header/TopMenu';
 import items from './components/header/menuitems.json'
 
-
-
-
 function App() {
-
   return (
     <Router>
       <>
@@ -27,8 +23,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={HomeScreen} />
           <Route exact path='/shoppingbag' component={ShoppingBag} />
-          <Route exact path='/item/:id' component={ProductDetails} />
-          <Route exact path='/products' component={ProductCategory} />
+          <Route exact path='/item/:id/:title' component={ProductDetails} />
           {items.map(({ label, name, subItems, ...rest }) => (
 
             subItems.map((subItem) => (

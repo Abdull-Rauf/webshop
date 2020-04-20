@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
     marginLeft: '2px',
     marginRight: '2px',
     width: '22vw',
-    minHeight: '15%',
+    minHeight: '20%',
 
   },
   cardContent: {
@@ -46,7 +46,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'space-between'
   },
   cardMedia: {
-    minHeight: 320,
+    minHeight: 450,
     width: '100%',
     objectFit: 'contain',
     padding: 5,
@@ -64,7 +64,7 @@ const useStyles = makeStyles(() => ({
   productDetails: {
     marginLeft: '10vw',
     width: '80vw',
-    marginTop: '10vh',
+
     display: 'flex',
     justifyContent: 'center',
   },
@@ -77,7 +77,6 @@ const useStyles = makeStyles(() => ({
   detailImage: {
     minWidth: '100%',
     backgroundColor: '#CCC',
-    padding: '10px',
     minHeight: 550
   },
   detailsText: {
@@ -86,9 +85,37 @@ const useStyles = makeStyles(() => ({
     minHeight: 450,
     marginLeft: 50,
   },
+  detailsName: {
+    marginLeft: '5%'
 
+  },
   detailsPrice: {
-    color: 'red',
+
+    marginLeft: '5%'
+
+  },
+  colorAndSize: {
+    width: '90% ',
+    height: 50,
+    fontSize: 15,
+    marginTop: 40,
+    marginLeft: '5%'
+  },
+  addButton: {
+    marginTop: '40px',
+    width: '90%',
+    marginLeft: '5%',
+    height: '50px',
+    textSelf: 'center'
+  },
+  favoriteButton: {
+
+    fontSize: 14,
+    opacity: '50%',
+    marginLeft: '5%',
+    marginTop: '5%',
+    cursor: 'pointer'
+
 
   },
 
@@ -97,7 +124,6 @@ const useStyles = makeStyles(() => ({
   bagScreen: {
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: '10vh',
     display: 'flex',
     flexDirection: 'column',
     width: '50%',
@@ -129,7 +155,6 @@ const useStyles = makeStyles(() => ({
     marginLeft: '10%'
   },
   bagProductPrice: {
-    color: 'red',
     marginLeft: '10%'
   },
 
@@ -139,7 +164,7 @@ const useStyles = makeStyles(() => ({
 
   footer: {
     minHeight: '20vh',
-    margin: '10vh auto 0',
+    margin: '0 auto 0',
     width: '100vw',
     backgroundColor: '#303030',
     color: 'white'

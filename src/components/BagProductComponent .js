@@ -17,12 +17,10 @@ export default function BagProductComponent(props) {
             <CardMedia className={classes.bagProductImage} image={item.src} />
             <Typography className={classes.bagProductName}>{item.name}</Typography>
             <Typography className={classes.bagProductPrice}>{item.price}</Typography>
+            <Typography className={classes.bagProductPrice}>{item.total}</Typography>
           </Card>
         )
       })}
-
-
     </div>
-
   )
 }

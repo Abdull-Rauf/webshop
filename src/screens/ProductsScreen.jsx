@@ -9,27 +9,26 @@ export default function ProductsScreen({ name, sub }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-
     setProducts(data[sub])
-    console.log(data[sub]);
-
-
   }, [])
 
   const classes = useStyles();
   return (
     <Fragment>
-      <div style={{ border: '1px solid #CCC', padding: 5 }}>
+      {/* <div style={{ border: '1px solid #CCC', padding: 5 }}>
         <Typography variant='p' style={{ textAlign: 'center' }}>You are here: {name}/{sub}</Typography>
-      </div>
+      </div> */}
       <div className={classes.products}>
         {products.map(product => {
           return <ProductCard
             id={product.id}
+            total={product.total}
             brand={product.brand}
             name={product.name}
             price={product.price}
             src={product.imgSrc}
+            color={product.color}
+            size={product.size}
           />
         })}
       </div>

@@ -10,18 +10,18 @@ import NewsBar from '../components/header/NewsBar'
 export default function HomeScreen(props) {
 
   const classes = useStyles();
-
   return (
 
     <div className={classes.home}>
       <NewsBar />
       {data.offers.map(product => {
-        return <OffersCard src={product.imgSrc} />
+        return <OffersCard src={product.imgSrc} key={product.id} />
       })}
       <Typography variant='h4' style={{ marginTop: '5vh', marginBottom: '5vh' }}> Trending Now</Typography>
       <div className={classes.popular}>
         {data.popular.map(product => {
           return <ProductCard
+            key={product.id}
             brand={product.brand}
             name={product.name}
             price={product.price}
