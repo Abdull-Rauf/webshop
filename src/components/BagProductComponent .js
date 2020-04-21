@@ -10,7 +10,7 @@ export default function BagProductComponent(props) {
   const classes = useStyles();
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', paddingTop: 20, }}>
       {props.items.map(item => {
         return (
           <Card className={classes.bagProductCard} elevation={0}>

@@ -54,8 +54,8 @@ const useStyles = makeStyles(() => ({
     marginTop: '70px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    justifyContent: 'space-evenly',
-    alignContent: 'space-between',
+    // justifyContent: 'space-evenly',
+    // alignContent: 'space-between',
   },
 
 
