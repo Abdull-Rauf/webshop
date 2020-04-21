@@ -122,12 +122,16 @@ const useStyles = makeStyles(() => ({
   //shoppingbagScreen
 
   bagScreen: {
+    paddingTop: 20,
     marginLeft: 'auto',
     marginRight: 'auto',
+    marginBottom: 50,
     display: 'flex',
     flexDirection: 'column',
     width: '50%',
+    minHeight: '50vh',
     boxShadow: '0px 5px 5px #CCC',
+    backgroundColor: 'white'
 
   },
 
@@ -138,7 +142,8 @@ const useStyles = makeStyles(() => ({
     height: 100,
     width: '95%',
     margin: 'auto',
-    marginBottom: 5
+    marginBottom: 5,
+    backgroundColor: '#f1f1f1'
   },
   bagProductImage: {
     height: 80,

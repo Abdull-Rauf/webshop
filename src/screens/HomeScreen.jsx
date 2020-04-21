@@ -27,6 +27,8 @@ export default function HomeScreen(props) {
             price={product.price}
             src={product.imgSrc}
             id={product.id}
+            color={product.color}
+            size={product.size}
           />
         })}
       </div>

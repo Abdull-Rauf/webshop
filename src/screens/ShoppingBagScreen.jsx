@@ -6,7 +6,7 @@ import { Typography } from '@material-ui/core';
 
 export default function ShoppingBagScreen(props) {
 
-  console.log(props)
+  console.log('props:', props)
 
 
 
@@ -15,11 +15,21 @@ export default function ShoppingBagScreen(props) {
   console.log(items)
   const classes = useStyles();
   return (
-    <div className={classes.bagScreen}>
-      <Typography variant='h6'>Products in your shopping bag</Typography>
-      <BagProductComponent items={items} />
-      <BagSummary />
+    <>
+      {items.length < 1 ? <Typography>You bag is empty </Typography> :
 
-    </div>
+        <>
+          <div className={classes.bagScreen}>
+            <Typography variant='h6'>Your Shopping Bag</Typography>
+            <BagProductComponent items={items} />
+            <BagSummary />
+          </div>
+          <div className={classes.bagScreen}>
+            <Typography variant='h6'>Order Summary</Typography>
+            <BagSummary />
+          </div>
+        </>
+      }
+    </>
   )
 }
